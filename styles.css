@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ------- end reset code -------- */
+
+/* ------- main -------- */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 485px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+}
+main p{
+    padding-left: 10px;
+}
+p:first-of-type{
+    padding-bottom: 20px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+nav{
+    width: fit-content;
+    margin: 0 auto;
+}
+li {
+    display:inline-flex;
+}
+li:nth-of-type(-n +3){
+    padding: 30px 15px;
+}
+li a {
+    text-decoration:none;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+[href="#top"] {
+    position:fixed;
+    bottom: 5px;
+    right: 10px;
+    border: #ffffff solid 2px;
+    padding:15px;
+}
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1, h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+header, main{
+    background-color: #ffffff;
+}
+figure{
+    display: flex;
+    flex-flow: column;
+    margin:auto 30px;
+    position:relative;
+    padding: 10px 0;
+    height: fit-content;
+}
+figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+}
+.white{
+    color:white;
+}
+.top{
+    top: 30px;
+}
+.bottom{
+    bottom: 30px;
+}
+aside{
+    width: 90%;
+    margin: 0 auto;
+}
+footer{
+    margin: 10px;
+    text-transform: uppercase;
+}
+/* ------- form -------- */
+footer,form {
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+}
+form p:nth-child(odd){
+    visibility: hidden;
+    line-height: 0%;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    height: 2em;
+}
+label{
+    margin: 20px 0px 0 10px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  resize: none;
+}
+input, ::placeholder, textarea {
+    color: #007d7b;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+input:focus, textarea:focus{
+    outline:#007d7b solid 3px;
+}
+button {
+    background-color: #007d7b;
+    width: 50%;
+    margin: 20px 0 40px 0;
+    font: inherit;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+button:hover{
+    opacity: 75%;
+    outline: #ffffff solid 3px;
+}
+
+
+/* ------- media queries -------- */
+@media screen and (min-width:880px) {
+    body{
+        width: 880px;
+    }
+    h1{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .figures{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 1px;
+    }
+    figure{
+        margin: .5px 10px;
+    }
+
+    [href="#top"] {
+        background-color:#ffffff33;
+        z-index: 10;
+    }
+}
+@media screen and (min-width:1330px) {
+    body{
+        width: 1330px;
+    }
+    .figures{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    nav{
+        margin: 0 0 0 auto;
+    }
+    #About {
+        margin-right: 10px;
+    }
+}
