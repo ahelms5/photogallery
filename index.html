@@ -1,56 +1,106 @@
-TK Photography
-About
-Gallery
-Contact
-top
-About
-Hello! 
-I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery
-Here are some highlights of my work. The locations and year are in the caption. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TK Photography</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 id="top">TK Photography</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=#About>About</a></li>
+            <li><a href=#Gallery>Gallery</a></li>
+            <li><a href=#Contact>Contact</a></li>
+            <li><a href=#top>Top</a></li>
+        </ul>
+    </nav>
 
-Chile.png
-Chile, 2001
+    <main>
+        <article id="About">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
+        </article>
+        <section id="Gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption. </p>
+            <div class="figures">
+                <figure>
+                    <img src="images/Chile.png" alt="beach and cliffs in Chile 2001">
+                    <figcaption class="bottom white">Chile, 2001</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Guatemala.png" alt="purple fields and sky with mountains in the background in Guatemala in 1997">
+                    <figcaption class="top white">Guatemala 1997</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Hawaii.png" alt="aerial shot of green mountains surrounded by the ocean in Hawaii 2010">
+                    <figcaption class="bottom white">Hawaii, 2010</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Iran.png" alt="">
+                    <figcaption class="top">Iran, 1999</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Ireland.png" alt="">
+                    <figcaption class="top">Ireland, 2012</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Italy.png" alt="">
+                    <figcaption class="bottom">Italy, 2015</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Moab-Desert.png" alt="">
+                    <figcaption class="bottom white">Moab Desert, 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rocky-Mountains.png" alt="">
+                    <figcaption class="top">Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Switzerland.png" alt="">
+                    <figcaption class="top">Switzerland, 2014</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/UK.png" alt="">
+                    <figcaption class="top">UK, 2005</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/USA.png" alt="">
+                    <figcaption class="top">USA, 2021</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Wyoming.png" alt="">
+                    <figcaption class="top white">Wyoming, 2021</figcaption>
+                </figure> 
+            </div>
+        </section>
+    </main>
+    <aside>
+        <form id="Contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I'll connect with you soon.</p>
+            <p>Your contact information</p>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="your full name">
 
-Guatemala.png
-Guatemala, 1997
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="enter your email address"> 
 
-Hawaii.png
-Hawaii, 2010
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="what can I help you with?"></textarea>
 
-Iran.png
-Iran, 1999
-
-Ireland.png
-Ireland, 2012
-
-Italy.png
-Italy, 2015
-
-Moab-Desert.png
-Moab Desert, 2020
-
-Rocky-Mountains.png
-Rocky Mountains, 2009
-
-Switzerland.png
-Switzerland, 2014
-
-UK.png
-UK, 2005
-
-USA.png
-USA, 2021
-
-Wyoming.png
-Wyoming, 2021
-Contact
-Please fill out this form and I’ll connect with you soon.
-
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
-
-Copyright 2021 TK Photography
+            <button type="button" onclick="alert('Thank You. I will be in contact soon')">Submit</button>
+        </form>
+    </aside>
+    <footer>
+        <small>Copyright 2021 TK Photography</small>
+    </footer>
+</body>
+</html>
